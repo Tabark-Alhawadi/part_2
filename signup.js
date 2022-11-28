@@ -87,7 +87,7 @@ function logSubmit(event) {
     users.push(obj)
     let useCon = /^[a-zA-Z ]/
     let mailCon = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z]+(?:\.[a-zA-Z0-9-]+)*$/
-    let checkPass=/^^[A-Za-z]\w{5,31}$/
+    let checkPass=/(?=.{8,})(?=.*[a-z])/
 //-----------------------------------------
 console.log(true);
     let a = false
