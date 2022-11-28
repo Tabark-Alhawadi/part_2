@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Log In</title>
+    <style>
+        *{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./bg1.jpg);
+    background-size: cover;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    height: 70vh;
+    background-color: rgba(171, 117, 230, 0.7);
+    margin: 14vh auto;
+    padding: 7vh;
+    box-shadow: 5px 5px 50px 8px rgba(171, 117, 230, 0.7);
+    border: #fff;
+    border-radius: 30px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input[type=email], input[type=password], input[type=text] {
+    width: 75%;
+    padding: 10px 15px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 3px solid #933bf2;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: azure;
+    color: black;
+    
+    
+}
+
+#phone{
+    width: 100%;
+    padding: 9px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+    background-color: #933bf2;
+    color: black;
+    padding: 11px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: #933bf2;
+    color: #feffff;
+    border: #f7f7f7 solid 3px;
+}
+h3 {
+    text-align: center;
+    color: black;
+    font-size: 3em;
+}
+
+
+.error{
+    display: none;
+    color: rgb(156, 0, 0);
+    font-size: 8px;
+    margin-top: -4px;
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="sec1">
+        
+            <form id="form">
+                <h3>login</h3>
+                <input type="email" id="mail" placeholder="Enter email">
+                <input type="password" id="pass" placeholder="Enter password">
+                <p class="error" id="err"></p>
+
+                <button type="submit">Login</button>
+
+            </form>
+        </div>
+                       
+       
+    </div>
+    <script src="./signIn.html"></script>
+</body>
+</html>

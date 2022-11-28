@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/homeshef.css">
+    <title>Home Page</title>
+    <style>
+        *{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(171, 117, 230, 0.7);
+}
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid white;
+    box-shadow: 5px 3px 8px #888888;
+    border-radius: 10px;
+    width: 30%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+input[type=email], input[type=password], input[type=text] {
+    width: 100%;
+    padding: 9px 20px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+#phone{
+    width: 100%;
+    padding: 9px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+    background-color: #933bf2;
+    color: black;
+    padding: 11px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: medium;
+}
+button:hover {
+    background-color: #fff;
+    color: black;
+    border: #933bf2 solid 3px;
+}
+h3 {
+    text-align: center;
+    color: #314180;
+}
+
+
+.error{
+    display: none;
+    color: rgb(156, 0, 0);
+    font-size: 8px;
+    margin-top: -4px;
+}
+
+table, th, td {
+    border-color: black;
+    margin: 0px auto;
+    border: solid #314180 3px ;
+    color: #314180;
+    font-size: 20px;
+    
+
+}
+
+
+option{
+    color: black;
+    background-color: #933bf2;
+    border: #ccc;
+    width: 100px;
+}
+select{
+background-color: #933bf2;
+color: black;
+border: #ffffff00;
+border-radius: 5px;
+}
+
+    </style>
+</head>
+<body>
+    
+<div class="container">
+    <div id="user">
+<div id="">
+    Hi  <span id="name"></span>
+</div>
+<div id="email">
+
+</div>
+    </div>
+    <form>
+        <div>
+            <label>Customer:</label>
+            <input type="text" id="inputName"/>
+        </div>
+        <div>
+            <label>Order:</label>
+            <select id="select">
+                <option value="rainbow mojito">rainbow mojito</option>
+                <option value="blueberry cheesecake">blueberry cheesecake</option>
+                <option value="berries ice cream">berries ice cream</option>
+            </select>
+        </div>
+        <div>
+            <button id="saveData" >ask for cheif</button>
+        </div>
+    </form>
+    <div id="btnn">
+        <button id="remove" >remove content</button>
+        <button onclick=" delet1()" id="delete" >delete local storage</button>
+    </div>
+
+    <div id="list">
+
+    </div>
+  </div>
+  
+ <script src="./mainhome.js"></script>
+
+</body>
+</html>
