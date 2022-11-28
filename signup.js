@@ -131,7 +131,7 @@ console.log(true);
         localStorage.setItem("users", JSON.stringify(users));
          console.log(true);
          console.log(true);
-        window.location=("./login.html")  
+        window.location=("./signIn.html")  
     }
     event.preventDefault();
  
